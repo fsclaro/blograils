@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'articles#index'
 
   # rotas para o CRUD de artigos
-  get '/articles', to: 'articles#index'
+  resources :articles
 end
