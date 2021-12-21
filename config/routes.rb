@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # define uma rota para a página inicial
+  root 'articles#index'
+
+  # rotas para o CRUD de artigos
+  get '/articles', to: 'articles#index'
 end
